@@ -16,8 +16,6 @@ def average(data: list[int]) -> float:
 
     return round(total / len(data), 2)
 
-
-
 def maximum(data: list) -> float:
     """
     Find the maximum value in a list of integers.
@@ -38,8 +36,6 @@ def maximum(data: list) -> float:
 
     return float(max_value)
     
-
-
 def variance(data: list) -> float:
     """
     Calculate the population variance of a list of integers.
@@ -57,8 +53,6 @@ def variance(data: list) -> float:
     squared_diffs = [(num - mean) ** 2 for num in data]
 
     return round(sum(squared_diffs) / len(data), 2)
-    
-
 
 def standard_deviation(data: list) -> float:
     """
