@@ -10,11 +10,11 @@ def average(data: list[int]) -> float:
     if not data:
         return [] # return empty list if no data is provided
     
-    average = 0
+    mean = 0
     for value in data:
-        average += value
+        mean += value
 
-    return round(average / len(data), 2)
+    return round(mean / len(data), 2)
 
 def maximum(data: list) -> float:
     """
@@ -24,17 +24,17 @@ def maximum(data: list) -> float:
         data (list[int]): A list of integers representing heart rate samples.
 
     Returns:
-        float: The highest integer value in the list. Returns an empty list if input is empty.
+        float: The highest integer value in the list as a float. Returns an empty list if input is empty.
     """
     if not data:
         return [] # return empty list if no data is provided
     
-    max_value = data[0]
+    maximum = data[0]
     for num in data:
-        if num > max_value:
-            max_value = num
+        if num > maximum:
+            maximum = num
 
-    return float(max_value)
+    return (maximum)
     
 def variance(data: list) -> float:
     """
@@ -50,9 +50,9 @@ def variance(data: list) -> float:
         return [] # return empty list if no data is provided
     
     mean = average(data)
-    squared_diffs = [(num - mean) ** 2 for num in data]
+    variance = [(num - mean) ** 2 for num in data]
 
-    return round(sum(squared_diffs) / len(data), 2)
+    return round(sum(variance) / len(data), 2)
 
 def standard_deviation(data: list) -> float:
     """
