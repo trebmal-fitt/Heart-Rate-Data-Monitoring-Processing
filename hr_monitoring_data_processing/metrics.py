@@ -10,11 +10,11 @@ def average(data: list[int]) -> float:
     if not data:
         return [] # return empty list if no data is provided
     
-    total = 0
+    average = 0
     for value in data:
-        total += value
+        average += value
 
-    return round(total / len(data), 2)
+    return round(average / len(data), 2)
 
 def maximum(data: list) -> float:
     """
