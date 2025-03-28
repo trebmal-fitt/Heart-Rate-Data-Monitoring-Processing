@@ -17,9 +17,6 @@ def filter_nondigits(data_list: list[str]) -> list[int]:
     """
     filters out all strings containing non-digit characters after removing new-line characters.
     Converts valid strings into integers and returns them in a new list.
-    
-    :param data_list: List of strings
-    :return: List of integers
     """
     result = []
 
